@@ -10,20 +10,18 @@ Windows Ver.
       • Python PyGObject bindings
       • GStreamer audio synthesizer engine
       • Desktop Shortcut creation
-  
-  ──────
-  
+     
   Once setup finishes, you can start the application anytime by:            
   
   • Double-clicking the TabForge Studio Desktop shortcut.
   • Or double-clicking QUICK_START.bat / TabForge_Studio.bat inside the     
   folder.
-  ──────
-  │ [!TIP]
-  │ Optional (Standalone Executable Build):
-  │ If you prefer a single .exe file without needing Python script wrappers,
-  │ double-click Build_EXE_Windows.bat inside the folder. It will generate a
-  │ standalone executable in dist\TabForgeStudio_Win64\.
+  
+    [!TIP]
+    Optional (Standalone Executable Build):
+    If you prefer a single .exe file without needing Python script wrappers,
+    double-click Build_EXE_Windows.bat inside the folder. It will generate a
+    standalone executable in dist\TabForgeStudio_Win64\.
 
 
 Linux Ver.
