@@ -17,7 +17,7 @@ Windows Ver.
   • Or double-clicking QUICK_START.bat / TabForge_Studio.bat inside the     
   folder.
   
-    [!TIP]
+  -[!TIP]-
     Optional (Standalone Executable Build):
     If you prefer a single .exe file without needing Python script wrappers,
     double-click Build_EXE_Windows.bat inside the folder. It will generate a
