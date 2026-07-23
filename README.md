@@ -2,21 +2,29 @@
 Guitar tab writer
 
 Windows Ver.
-  1. Extract the ZIP file:                                                                                     
-      • Transfer TabForge_Studio_Windows_x64.zip to your Windows PC.                                           
-      • Right-click TabForge_Studio_Windows_x64.zip and select Extract All...                                  
-  2. Open the App:                                                                                             
-      • Double-click QUICK_START.bat (or TabForge_Studio.bat).                                                 
-      • Build_EXE_Windows.bat: Compiles TabForge Studio into a standalone TabForgeStudio.exe binary.           
-      • tabforge_studio.spec: PyInstaller bundle specification configured for GTK4 & audio engines.            
-  4. Documentation                                                                                             
-      • README_WINDOWS.txt                                                                                     
-                                                                                                               
-      • First-time setup: If GTK4 is not installed on your Windows PC, select Option [2] in QUICK_START.bat to 
-      run the 1-Click Installer.                                                                               
-  3. Silent / Desktop Launch:                                                                                  
-      • Double-click Start_TabForge_Studio.vbs to launch without showing a command window, or use option [4] in
-      QUICK_START.bat to create a Desktop shortcut.
+  1. Open the extracted TabForge_Studio_Windows_x64 folder.
+  2. Double-click Setup_Windows_x64.bat (or QUICK_START.bat).
+  3. The setup script will automatically install all necessary runtime      
+  dependencies:
+      • GTK4 & Libadwaita graphics runtime
+      • Python PyGObject bindings
+      • GStreamer audio synthesizer engine
+      • Desktop Shortcut creation
+  
+  ──────
+  
+  Once setup finishes, you can start the application anytime by:            
+  
+  • Double-clicking the TabForge Studio Desktop shortcut.
+  • Or double-clicking QUICK_START.bat / TabForge_Studio.bat inside the     
+  folder.
+  ──────
+  │ [!TIP]
+  │ Optional (Standalone Executable Build):
+  │ If you prefer a single .exe file without needing Python script wrappers,
+  │ double-click Build_EXE_Windows.bat inside the folder. It will generate a
+  │ standalone executable in dist\TabForgeStudio_Win64\.
+
 
 Linux Ver.
   1. Extract TabForge_Studio_Linux.zip
