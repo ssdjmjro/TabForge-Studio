@@ -1,0 +1,11 @@
+  • 🎸 22-Fret Neck: Click frets/strings directly to    
+  hear guitar sounds and input notes.
+  • 🎵 Guitar Audio Synthesizer: Pluck sounds, playback sweep with BPM speed
+  control.
+  • 🎼 Songsterr-Style Tab Staff Canvas: Interactive measure grid, beat     
+  navigation, keyboard arrow shortcuts.
+  • 💾 Save & Load JSON Tabs: Full .json tab file compatibility.            
+  • 📄 Export ASCII Tab & PDF Print: Print tabs to PDF or copy raw ASCII    
+  formatting.
+  • 🌙 Dark Studio & Sheet Paper Themes: Toggle between dark studio and     
+  classic paper sheet view.
