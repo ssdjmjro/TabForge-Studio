@@ -15,36 +15,36 @@ Linux Ver.
 
    ### Step 1: Extract the Zip File (if not already extracted)
   
-  Open a terminal in the folder where you placed TabForge_Studio_App.zip and run:
+   Open a terminal in the folder where you placed TabForge_Studio_App.zip and run:
   
-  unzip TabForge_Studio_App.zip
-   cd TabForge_Studio_App
+   unzip TabForge_Studio_App.zip
+    cd TabForge_Studio_App
    
-  ──────
-  ### Step 2: Install System Dependencies (Run Once)
-  
-  Run this command to install the Python, GTK4, Libadwaita, and GStreamer graphics & audio libraries required by TabForge Studio:
-  
-  sudo apt update && sudo apt install -y \
-      python3 \
-      python3-gi \
-      python3-gi-cairo \
-      python3-cairo \
-      gir1.2-gtk-4.0 \
-      gir1.2-adw-1 \
-      gir1.2-gstreamer-1.0 \
-      gstreamer1.0-plugins-base \
-      gstreamer1.0-plugins-good \
-      gstreamer1.0-plugins-bad \
-      gstreamer1.0-plugins-ugly
+   ──────
+   ### Step 2: Install System Dependencies (Run Once)
+   
+   Run this command to install the Python, GTK4, Libadwaita, and GStreamer graphics & audio libraries required by TabForge Studio:
+   
+   sudo apt update && sudo apt install -y \
+       python3 \
+       python3-gi \
+       python3-gi-cairo \
+       python3-cairo \
+       gir1.2-gtk-4.0 \
+       gir1.2-adw-1 \
+       gir1.2-gstreamer-1.0 \
+       gstreamer1.0-plugins-base \
+       gstreamer1.0-plugins-good \
+       gstreamer1.0-plugins-bad \
+       gstreamer1.0-plugins-ugly
       
-  ──────
-  ### Step 3: Run / Activate the Application
+   ──────
+   ### Step 3: Run / Activate the Application
   
-  Navigate into the source folder and launch main.py:
+   Navigate into the source folder and launch main.py:
   
-  cd TabForge_Studio_App_Source
-  python3 main.py
+   cd TabForge_Studio_App_Source
+   python3 main.py
 
 
 MacOS Ver.
