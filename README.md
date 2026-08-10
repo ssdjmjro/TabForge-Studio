@@ -17,8 +17,8 @@ Linux Ver.
   
    Open a terminal in the folder where you placed TabForge_Studio_App.zip and run:
   
-   unzip TabForge_Studio_App.zip
-    cd TabForge_Studio_App
+   unzip TabForge_Studio_App_Linux.zip
+    cd TabForge_Studio_App_Linux
    
    ──────
    ### Step 2: Install System Dependencies (Run Once)
