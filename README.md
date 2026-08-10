@@ -12,7 +12,8 @@ Windows Ver.
   Chrome with zero setup or installation required.
 
 Linux Ver.
-    1. Open terminal and run this command:
+
+   1. Open terminal and run this command:
     nano ~/.local/share/applications/tabforge-studio.desktop
   
   2. Copy and paste the following content inside:
