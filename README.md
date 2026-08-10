@@ -12,12 +12,18 @@ Windows Ver.
   Chrome with zero setup or installation required.
 
 Linux Ver.
-  1. Extract TabForge_Studio_Linux.zip
-  2. Open terminal in the extracted folder and run:
-    ./TabForge_Studio.sh
+    1. Open terminal and run this command:
+    nano ~/.local/share/applications/tabforge-studio.desktop
   
-  3. (Optional) Run ./setup_linux.sh for 1-click dependency installation (Debian, Ubuntu, Arch, Fedora).
-  4. (Optional) Run ./install_desktop_shortcut.sh to create an Application Menu & Desktop shortcut.
+  2. Copy and paste the following content inside:
+    [Desktop Entry]
+    Name=TabForge Studio
+    Comment=Guitar Tab Writer & Editor
+    Exec=python3 /home/ssdjmjro/tab_writer/main.py
+    Icon=/home/ssdjmjro/tab_writer/stratocaster.svg
+    Terminal=false
+    Type=Application
+    Categories=AudioVideo;Audio;Utility;
 
 MacOS Ver.
   1. Extract TabForge_Studio_macOS.zip
