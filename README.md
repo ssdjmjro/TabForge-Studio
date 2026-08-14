@@ -13,7 +13,7 @@ Windows Ver.
 
 Linux Ver.
 
-   ### Step 1: Extract the Zip File (if not already extracted)
+   Step 1: Extract the Zip File (if not already extracted)
   
    Open a terminal in the folder where you placed TabForge_Studio_App.zip and run:
   
@@ -21,7 +21,7 @@ Linux Ver.
     cd TabForge_Studio_App_Linux
    
    ──────
-   ### Step 2: Install System Dependencies (Run Once)
+   Step 2: Install System Dependencies (Run Once)
    
    Run this command to install the Python, GTK4, Libadwaita, and GStreamer graphics & audio libraries required by TabForge Studio:
    
@@ -39,7 +39,7 @@ Linux Ver.
        gstreamer1.0-plugins-ugly
       
    ──────
-   ### Step 3: Run / Activate the Application
+   Step 3: Run / Activate the Application
   
    Navigate into the source folder and launch main.py:
   
