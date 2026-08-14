@@ -21,6 +21,7 @@ Linux Ver.
     cd TabForge_Studio_App_Linux
    
    ──────
+   
    Step 2: Install System Dependencies (Run Once)
    
    Run this command to install the Python, GTK4, Libadwaita, and GStreamer graphics & audio libraries required by TabForge Studio:
@@ -38,12 +39,14 @@ Linux Ver.
        gstreamer1.0-plugins-bad \
        gstreamer1.0-plugins-ugly
       
+   
    ──────
    Step 3: Run / Activate the Application
   
    Navigate into the source folder and launch main.py:
   
    cd TabForge_Studio_App_Source
+   
    python3 main.py
 
 
