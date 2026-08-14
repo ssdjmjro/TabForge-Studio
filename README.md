@@ -53,29 +53,10 @@ Linux Ver.
    ______
    Step 4: Make the APP icon
 
-      Run this one single line to install the packages without any line breaks:
-  
-    sudo apt update && sudo apt install -y python3-gi python3-gi-cairo python3-cairo gir1.2-gtk-4.0 gir1.2-adw-1   
-    gir1.2-gstreamer-1.0 gstreamer1.0-plugins-base gstreamer1.0-plugins-good
- 
-  ──────
-  
-  Once that finishes, run this one single line to set up the app icon and launcher:
-  
-    MAIN=$(find "$HOME" -name "main.py" -path "*/TabForge*" 2>/dev/null | head -n 1) && SVG=$(find "$HOME" -name   
-    "stratocaster.svg" 2>/dev/null | head -n 1) && mkdir -p "$HOME/.local/share/icons" "$HOME/.
-    local/share/applications" && cp "$SVG" "$HOME/.local/share/icons/tabforge.svg" && echo -e "[Desktop              
-    Entry]\nType=Application\nName=TabForge Studio\nExec=python3 \"$MAIN\"\nPath=$(dirname "$MAIN")\nIcon=$HOME/.    
-    local/share/icons/tabforge.svg\nTerminal=false\nCategories=AudioVideo;Music;\nStartupWMClass=io.github.tabforge. 
-    studio" > "$HOME/.local/share/applications/tabforge.desktop" && update-desktop-database "$HOME/.
-    local/share/applications" 2>/dev/null && echo "🎸 SUCCESS! TabForge is installed."
-
- 
-
-
-                             
-
-
+    mkdir -p ~/.local/share/icons ~/.local/share/applications && cp stratocaster.svg ~/.local/share/icons/tabforge.svg && echo -e "[Desktop Entry]\nType=Application\nName=TabForge Studio\nExec=python3 $PWD/main.
+    py\nPath=$PWD\nIcon=$HOME/.local/share/icons/tabforge.svg\nTerminal=false\nCategories=AudioVideo;Music;
+    \nStartupWMClass=io.github.tabforge.studio" > ~/.local/share/applications/tabforge.desktop && update-desktop-    
+    database ~/.local/share/applications
 
 MacOS Ver.
   1. Extract TabForge_Studio_macOS.zip
