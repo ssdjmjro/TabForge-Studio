@@ -53,35 +53,33 @@ Linux Ver.
    ______
    Step 4: Make the APP icon
 
-    python3 -c "                                                                                                   
-    import os, glob, subprocess                                                                                    
-    home = os.path.expanduser('~')                                                                                 
-    svg = (glob.glob(f'{home}/**/stratocaster.svg', recursive=True) or [''])[0]                                    
-    py = (glob.glob(f'{home}/**/TabForge*/main.py', recursive=True) or glob.glob(f'{home}/**/TabForge*/**/main.py',
-    recursive=True) or [''])[0]                                                                                      
-                                                                                                                   
-    if not svg or not py:                                                                                          
-        print('❌ Error: Could not locate TabForge files.')                                                        
-    else:                                                                                                          
-        # 1. Install Icon                                                                                          
-        icon_dir = os.path.join(home, '.local/share/icons/hicolor/scalable/apps')                                  
-        os.makedirs(icon_dir, exist_ok=True)                                                                       
-        with open(svg, 'rb') as f_in, open(os.path.join(icon_dir, 'tabforge.svg'), 'wb') as f_out:                 
-            f_out.write(f_in.read())                                                                               
-                                                                                                                   
-        # 2. Install Desktop App                                                                                   
-        app_dir = os.path.join(home, '.local/share/applications')                                                  
-        os.makedirs(app_dir, exist_ok=True)                                                                        
-        with open(os.path.join(app_dir, 'tabforge.desktop'), 'w') as f:                                            
-            f.write(f'[Desktop Entry]\nType=Application\nName=TabForge Studio\nExec=python3                        
-    \"{py}\"\nIcon=tabforge\nTerminal=false\nCategories=AudioVideo;Music;\nStartupWMClass=io.github.tabforge.        
-    studio\n')                                                                                                       
-                                                                                                                   
-        # 3. Refresh Desktop Cache                                                                                 
-        subprocess.run(['update-desktop-database', app_dir], check=False)                                          
-        print('🎸 Success! TabForge Studio is installed with its icon. Press Super/Windows key and search TabForge.
-    ')                                                                                                               
-     "                                       
+    bash -c '
+    SVG=$(find "$HOME" -name "stratocaster.svg" 2>/dev/null | head -n 1)
+    MAIN=$(find "$HOME" -name "main.py" -path "*/TabForge*" 2>/dev/null | head -n 1)
+  
+    if [ -z "$SVG" ] || [ -z "$MAIN" ]; then
+        echo "❌ Error: Could not find TabForge files. Make sure the zip is extracted!"
+        exit 1
+    fi
+  
+    mkdir -p "$HOME/.local/share/icons/hicolor/scalable/apps" "$HOME/.local/share/applications"
+    cp "$SVG" "$HOME/.local/share/icons/hicolor/scalable/apps/tabforge.svg"
+  
+    cat > "$HOME/.local/share/applications/tabforge.desktop" << EOF
+    [Desktop Entry]
+    Type=Application
+    Name=TabForge Studio
+    Exec=python3 "$MAIN"
+    Icon=tabforge
+    Terminal=false
+    Categories=AudioVideo;Music;
+    StartupWMClass=io.github.tabforge.studio
+    EOF
+  
+    update-desktop-database "$HOME/.local/share/applications" 2>/dev/null
+    echo "🎸 Success! TabForge Studio is now an app with its icon."
+    '
+                             
 
 
 
