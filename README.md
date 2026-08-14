@@ -13,7 +13,7 @@ Windows Ver.
 
 Linux Ver.
 
-   Step 1: Extract the Zip File (if not already extracted)
+ Step 1: Extract the Zip File (if not already extracted)
   
    Open a terminal in the folder where you placed TabForge_Studio_App.zip and run:
   
