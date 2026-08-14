@@ -50,26 +50,24 @@ Linux Ver.
    python3 main.py
 
    ______
-   Step 4: make the app icon
+   Step 4: Make the APP icon
 
-   mkdir -p ~/.local/share/icons/hicolor/scalable/apps ~/.local/share/applications
-  cp
-  /home/ssdjmjro/Downloads/TabForge_Studio_App_Linux/TabForge_Studio_App/TabForge_Studio_App_Source/stratocaster.  
-  svg ~/.local/share/icons/hicolor/scalable/apps/tabforge.svg
+    mkdir -p ~/.local/share/icons/hicolor/scalable/apps ~/.local/share/applications
+    cp stratocaster.svg ~/.local/share/icons/hicolor/scalable/apps/tabforge.svg
   
-  cat << 'EOF' > ~/.local/share/applications/tabforge.desktop
-   [Desktop Entry]
-   Type=Application
-  Name=TabForge Studio
-   Exec=python3
-  /home/ssdjmjro/Downloads/TabForge_Studio_App_Linux/TabForge_Studio_App/TabForge_Studio_App_Source/main.py        
+    cat << EOF > ~/.local/share/applications/tabforge.desktop
+    [Desktop Entry]
+    Type=Application
+    Name=TabForge Studio
+    Exec=python3 "$PWD/main.py"
     Icon=tabforge
     Terminal=false
     Categories=AudioVideo;Music;
     StartupWMClass=io.github.tabforge.studio
     EOF
   
-  update-desktop-database ~/.local/share/applications
+    update-desktop-database ~/.local/share/applications
+
 
 
 MacOS Ver.
