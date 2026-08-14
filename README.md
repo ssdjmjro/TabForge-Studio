@@ -54,19 +54,21 @@ Linux Ver.
    Step 4: Make the APP icon
 
                                                                                                                     
-    bash -c '                                                                                                      
-    SVG=$(find "$HOME" -name "stratocaster.svg" 2>/dev/null | head -n 1)                                           
+      sudo apt update && sudo apt install -y python3-gi python3-gi-cairo python3-cairo gir1.2-gtk-4.0 gir1.2-adw-1   
+    gir1.2-gstreamer-1.0 gstreamer1.0-plugins-base gstreamer1.0-plugins-good && bash -c '                            
     MAIN=$(find "$HOME" -name "main.py" -path "*/TabForge*" 2>/dev/null | head -n 1)                               
-                                                                                                                   
-    if [ -z "$SVG" ] || [ -z "$MAIN" ]; then                                                                       
-        echo "❌ Error: Could not find TabForge files."                                                            
-        exit 1                                                                                                     
-    fi                                                                                                             
-                                                                                                                   
-    mkdir -p "$HOME/.local/share/icons" "$HOME/.local/share/applications"                                          
-    cp "$SVG" "$HOME/.local/share/icons/tabforge.svg"                                                              
+    SVG=$(find "$HOME" -name "stratocaster.svg" 2>/dev/null | head -n 1)                                           
   
-    # Convert SVG to PNG so Linux can load it without cache delay
+    if [ -z "$MAIN" ] || [ -z "$SVG" ]; then
+        echo "❌ Error: Make sure TabForge zip is extracted in your Home/Downloads folder."
+        exit 1
+    fi
+  
+    APP_DIR=$(dirname "$MAIN")
+    mkdir -p "$HOME/.local/share/icons" "$HOME/.local/share/applications"
+  
+    # Copy and convert icon
+    cp "$SVG" "$HOME/.local/share/icons/tabforge.svg"
     python3 -c "
     import gi
     gi.require_version(\"GdkPixbuf\", \"2.0\")
@@ -75,18 +77,16 @@ Linux Ver.
     pix.savev(\"$HOME/.local/share/icons/tabforge.png\", \"png\", [], [])
     " 2>/dev/null
   
-    # Choose the best icon file
-    if [ -f "$HOME/.local/share/icons/tabforge.png" ]; then
-        ICON_FILE="$HOME/.local/share/icons/tabforge.png"
-    else
-        ICON_FILE="$HOME/.local/share/icons/tabforge.svg"
-    fi
+    ICON_FILE="$HOME/.local/share/icons/tabforge.png"
+    [ ! -f "$ICON_FILE" ] && ICON_FILE="$HOME/.local/share/icons/tabforge.svg"
   
+    # Create Desktop Launcher with Path
     cat > "$HOME/.local/share/applications/tabforge.desktop" << EOF
     [Desktop Entry]
     Type=Application
     Name=TabForge Studio
     Exec=python3 "$MAIN"
+    Path=$APP_DIR
     Icon=$ICON_FILE
     Terminal=false
     Categories=AudioVideo;Music;
@@ -94,9 +94,10 @@ Linux Ver.
     EOF
   
     update-desktop-database "$HOME/.local/share/applications" 2>/dev/null
-    echo "🎸 Icon set directly to: $ICON_FILE"
-    echo "✅ Done! Press Super/Windows key and search TabForge."
+    echo "🎸 All dependencies installed & TabForge Studio is ready to launch!"
     '
+
+
 
                              
 
