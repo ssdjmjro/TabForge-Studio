@@ -53,32 +53,51 @@ Linux Ver.
    ______
    Step 4: Make the APP icon
 
-    bash -c '
-    SVG=$(find "$HOME" -name "stratocaster.svg" 2>/dev/null | head -n 1)
-    MAIN=$(find "$HOME" -name "main.py" -path "*/TabForge*" 2>/dev/null | head -n 1)
+                                                                                                                    
+    bash -c '                                                                                                      
+    SVG=$(find "$HOME" -name "stratocaster.svg" 2>/dev/null | head -n 1)                                           
+    MAIN=$(find "$HOME" -name "main.py" -path "*/TabForge*" 2>/dev/null | head -n 1)                               
+                                                                                                                   
+    if [ -z "$SVG" ] || [ -z "$MAIN" ]; then                                                                       
+        echo "❌ Error: Could not find TabForge files."                                                            
+        exit 1                                                                                                     
+    fi                                                                                                             
+                                                                                                                   
+    mkdir -p "$HOME/.local/share/icons" "$HOME/.local/share/applications"                                          
+    cp "$SVG" "$HOME/.local/share/icons/tabforge.svg"                                                              
   
-    if [ -z "$SVG" ] || [ -z "$MAIN" ]; then
-        echo "❌ Error: Could not find TabForge files. Make sure the zip is extracted!"
-        exit 1
+    # Convert SVG to PNG so Linux can load it without cache delay
+    python3 -c "
+    import gi
+    gi.require_version(\"GdkPixbuf\", \"2.0\")
+    from gi.repository import GdkPixbuf
+    pix = GdkPixbuf.Pixbuf.new_from_file_at_scale(\"$SVG\", 512, 512, True)
+    pix.savev(\"$HOME/.local/share/icons/tabforge.png\", \"png\", [], [])
+    " 2>/dev/null
+  
+    # Choose the best icon file
+    if [ -f "$HOME/.local/share/icons/tabforge.png" ]; then
+        ICON_FILE="$HOME/.local/share/icons/tabforge.png"
+    else
+        ICON_FILE="$HOME/.local/share/icons/tabforge.svg"
     fi
-  
-    mkdir -p "$HOME/.local/share/icons/hicolor/scalable/apps" "$HOME/.local/share/applications"
-    cp "$SVG" "$HOME/.local/share/icons/hicolor/scalable/apps/tabforge.svg"
   
     cat > "$HOME/.local/share/applications/tabforge.desktop" << EOF
     [Desktop Entry]
     Type=Application
     Name=TabForge Studio
     Exec=python3 "$MAIN"
-    Icon=tabforge
+    Icon=$ICON_FILE
     Terminal=false
     Categories=AudioVideo;Music;
     StartupWMClass=io.github.tabforge.studio
     EOF
   
     update-desktop-database "$HOME/.local/share/applications" 2>/dev/null
-    echo "🎸 Success! TabForge Studio is now an app with its icon."
+    echo "🎸 Icon set directly to: $ICON_FILE"
+    echo "✅ Done! Press Super/Windows key and search TabForge."
     '
+
                              
 
 
