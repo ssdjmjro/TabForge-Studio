@@ -13,18 +13,17 @@ Windows Ver.
 
 Linux Ver.
 
- Step 1: Extract the Zip File (if not already extracted)
+   Step 1: Extract the Zip File (if not already extracted)
   
    Open a terminal in the folder where you placed TabForge_Studio_App.zip and run:
-  
-   unzip TabForge_Studio_App_Linux.zip
-    cd TabForge_Studio_App_Linux
+       unzip TabForge_Studio_App_Linux.zip
+       cd TabForge_Studio_App_Linux
    
    ──────
    
    Step 2: Install System Dependencies (Run Once)
    
-   Run this command to install the Python, GTK4, Libadwaita, and GStreamer graphics & audio libraries required by TabForge Studio:
+  Run this command to install the Python, GTK4, Libadwaita, and GStreamer graphics & audio libraries required by TabForge       Studio:
    
    sudo apt update && sudo apt install -y \
        python3 \
@@ -48,6 +47,28 @@ Linux Ver.
    cd TabForge_Studio_App_Source
    
    python3 main.py
+
+   ______
+   Step 4: make the app icon
+
+   mkdir -p ~/.local/share/icons/hicolor/scalable/apps ~/.local/share/applications
+  cp
+  /home/ssdjmjro/Downloads/TabForge_Studio_App_Linux/TabForge_Studio_App/TabForge_Studio_App_Source/stratocaster.  
+  svg ~/.local/share/icons/hicolor/scalable/apps/tabforge.svg
+  
+  cat << 'EOF' > ~/.local/share/applications/tabforge.desktop
+   [Desktop Entry]
+   Type=Application
+  Name=TabForge Studio
+   Exec=python3
+  /home/ssdjmjro/Downloads/TabForge_Studio_App_Linux/TabForge_Studio_App/TabForge_Studio_App_Source/main.py        
+    Icon=tabforge
+    Terminal=false
+    Categories=AudioVideo;Music;
+    StartupWMClass=io.github.tabforge.studio
+    EOF
+  
+  update-desktop-database ~/.local/share/applications
 
 
 MacOS Ver.
