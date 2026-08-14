@@ -16,8 +16,9 @@ Linux Ver.
    Step 1: Extract the Zip File (if not already extracted)
   
    Open a terminal in the folder where you placed TabForge_Studio_App.zip and run:
-       unzip TabForge_Studio_App_Linux.zip
-       cd TabForge_Studio_App_Linux
+          
+        unzip TabForge_Studio_App_Linux.zip
+        cd TabForge_Studio_App_Linux
    
    ──────
    
@@ -25,7 +26,7 @@ Linux Ver.
    
   Run this command to install the Python, GTK4, Libadwaita, and GStreamer graphics & audio libraries required by TabForge       Studio:
    
-   sudo apt update && sudo apt install -y \
+     sudo apt update && sudo apt install -y \
        python3 \
        python3-gi \
        python3-gi-cairo \
@@ -45,9 +46,9 @@ Linux Ver.
   
    Navigate into the source folder and launch main.py:
   
-   cd TabForge_Studio_App_Source
+     cd TabForge_Studio_App_Source
    
-   python3 main.py
+     python3 main.py
 
    ______
    Step 4: Make the APP icon
