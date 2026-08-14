@@ -40,6 +40,7 @@ Linux Ver.
       
    
    ──────
+   
    Step 3: Run / Activate the Application
   
    Navigate into the source folder and launch main.py:
