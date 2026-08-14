@@ -53,50 +53,24 @@ Linux Ver.
    ______
    Step 4: Make the APP icon
 
-                                                                                                                    
-      sudo apt update && sudo apt install -y python3-gi python3-gi-cairo python3-cairo gir1.2-gtk-4.0 gir1.2-adw-1   
-    gir1.2-gstreamer-1.0 gstreamer1.0-plugins-base gstreamer1.0-plugins-good && bash -c '                            
-    MAIN=$(find "$HOME" -name "main.py" -path "*/TabForge*" 2>/dev/null | head -n 1)                               
-    SVG=$(find "$HOME" -name "stratocaster.svg" 2>/dev/null | head -n 1)                                           
+      Run this one single line to install the packages without any line breaks:
   
-    if [ -z "$MAIN" ] || [ -z "$SVG" ]; then
-        echo "❌ Error: Make sure TabForge zip is extracted in your Home/Downloads folder."
-        exit 1
-    fi
+    sudo apt update && sudo apt install -y python3-gi python3-gi-cairo python3-cairo gir1.2-gtk-4.0 gir1.2-adw-1   
+    gir1.2-gstreamer-1.0 gstreamer1.0-plugins-base gstreamer1.0-plugins-good
+ 
+  ──────
   
-    APP_DIR=$(dirname "$MAIN")
-    mkdir -p "$HOME/.local/share/icons" "$HOME/.local/share/applications"
+  Once that finishes, run this one single line to set up the app icon and launcher:
   
-    # Copy and convert icon
-    cp "$SVG" "$HOME/.local/share/icons/tabforge.svg"
-    python3 -c "
-    import gi
-    gi.require_version(\"GdkPixbuf\", \"2.0\")
-    from gi.repository import GdkPixbuf
-    pix = GdkPixbuf.Pixbuf.new_from_file_at_scale(\"$SVG\", 512, 512, True)
-    pix.savev(\"$HOME/.local/share/icons/tabforge.png\", \"png\", [], [])
-    " 2>/dev/null
-  
-    ICON_FILE="$HOME/.local/share/icons/tabforge.png"
-    [ ! -f "$ICON_FILE" ] && ICON_FILE="$HOME/.local/share/icons/tabforge.svg"
-  
-    # Create Desktop Launcher with Path
-    cat > "$HOME/.local/share/applications/tabforge.desktop" << EOF
-    [Desktop Entry]
-    Type=Application
-    Name=TabForge Studio
-    Exec=python3 "$MAIN"
-    Path=$APP_DIR
-    Icon=$ICON_FILE
-    Terminal=false
-    Categories=AudioVideo;Music;
-    StartupWMClass=io.github.tabforge.studio
-    EOF
-  
-    update-desktop-database "$HOME/.local/share/applications" 2>/dev/null
-    echo "🎸 All dependencies installed & TabForge Studio is ready to launch!"
-    '
+    MAIN=$(find "$HOME" -name "main.py" -path "*/TabForge*" 2>/dev/null | head -n 1) && SVG=$(find "$HOME" -name   
+    "stratocaster.svg" 2>/dev/null | head -n 1) && mkdir -p "$HOME/.local/share/icons" "$HOME/.
+    local/share/applications" && cp "$SVG" "$HOME/.local/share/icons/tabforge.svg" && echo -e "[Desktop              
+    Entry]\nType=Application\nName=TabForge Studio\nExec=python3 \"$MAIN\"\nPath=$(dirname "$MAIN")\nIcon=$HOME/.    
+    local/share/icons/tabforge.svg\nTerminal=false\nCategories=AudioVideo;Music;\nStartupWMClass=io.github.tabforge. 
+    studio" > "$HOME/.local/share/applications/tabforge.desktop" && update-desktop-database "$HOME/.
+    local/share/applications" 2>/dev/null && echo "🎸 SUCCESS! TabForge is installed."
 
+ 
 
 
                              
