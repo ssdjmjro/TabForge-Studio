@@ -1,0 +1,777 @@
+{
+  "title": "BABYMONSTER - Really Like You (Guitar Flex)",
+  "artist": "Danny Yau (Original by BABYMONSTER)",
+  "bpm": 90,
+  "tuning_name": "Half-Step Down",
+  "capo": 0,
+  "measures": [
+    {
+      "beats_per_measure": 16,
+      "beats": [
+        {
+          "duration": 0.25,
+          "notes": {
+            "1": {
+              "string_idx": 1,
+              "fret": 5,
+              "technique": ""
+            },
+            "2": {
+              "string_idx": 2,
+              "fret": 6,
+              "technique": ""
+            },
+            "3": {
+              "string_idx": 3,
+              "fret": 6,
+              "technique": ""
+            },
+            "5": {
+              "string_idx": 5,
+              "fret": 5,
+              "technique": ""
+            }
+          }
+        },
+        {
+          "duration": 0.25,
+          "notes": {
+            "5": {
+              "string_idx": 5,
+              "fret": 0,
+              "technique": "x"
+            }
+          }
+        },
+        {
+          "duration": 0.25,
+          "notes": {
+            "0": {
+              "string_idx": 0,
+              "fret": 7,
+              "technique": "h"
+            }
+          }
+        },
+        {
+          "duration": 0.25,
+          "notes": {
+            "0": {
+              "string_idx": 0,
+              "fret": 4,
+              "technique": "p"
+            }
+          }
+        },
+        {
+          "duration": 0.25,
+          "notes": {
+            "2": {
+              "string_idx": 2,
+              "fret": 6,
+              "technique": ""
+            }
+          }
+        },
+        {
+          "duration": 0.25,
+          "notes": {
+            "0": {
+              "string_idx": 0,
+              "fret": 5,
+              "technique": ""
+            }
+          }
+        },
+        {
+          "duration": 0.25,
+          "notes": {
+            "0": {
+              "string_idx": 0,
+              "fret": 9,
+              "technique": "/"
+            }
+          }
+        },
+        {
+          "duration": 0.25,
+          "notes": {
+            "0": {
+              "string_idx": 0,
+              "fret": 7,
+              "technique": ""
+            }
+          }
+        },
+        {
+          "duration": 0.25,
+          "notes": {
+            "1": {
+              "string_idx": 1,
+              "fret": 4,
+              "technique": ""
+            },
+            "2": {
+              "string_idx": 2,
+              "fret": 5,
+              "technique": ""
+            },
+            "3": {
+              "string_idx": 3,
+              "fret": 4,
+              "technique": ""
+            },
+            "5": {
+              "string_idx": 5,
+              "fret": 4,
+              "technique": ""
+            }
+          }
+        },
+        {
+          "duration": 0.25,
+          "notes": {
+            "5": {
+              "string_idx": 5,
+              "fret": 0,
+              "technique": "x"
+            }
+          }
+        },
+        {
+          "duration": 0.25,
+          "notes": {
+            "3": {
+              "string_idx": 3,
+              "fret": 6,
+              "technique": "h"
+            }
+          }
+        },
+        {
+          "duration": 0.25,
+          "notes": {
+            "2": {
+              "string_idx": 2,
+              "fret": 5,
+              "technique": ""
+            }
+          }
+        },
+        {
+          "duration": 0.25,
+          "notes": {
+            "0": {
+              "string_idx": 0,
+              "fret": 4,
+              "technique": ""
+            }
+          }
+        },
+        {
+          "duration": 0.25,
+          "notes": {
+            "0": {
+              "string_idx": 0,
+              "fret": 2,
+              "technique": "p"
+            }
+          }
+        },
+        {
+          "duration": 0.25,
+          "notes": {
+            "0": {
+              "string_idx": 0,
+              "fret": 12,
+              "technique": "NH"
+            }
+          }
+        },
+        {
+          "duration": 0.25,
+          "notes": {
+            "5": {
+              "string_idx": 5,
+              "fret": 0,
+              "technique": "x"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "beats_per_measure": 16,
+      "beats": [
+        {
+          "duration": 0.25,
+          "notes": {
+            "1": {
+              "string_idx": 1,
+              "fret": 5,
+              "technique": ""
+            },
+            "2": {
+              "string_idx": 2,
+              "fret": 4,
+              "technique": ""
+            },
+            "3": {
+              "string_idx": 3,
+              "fret": 6,
+              "technique": ""
+            },
+            "4": {
+              "string_idx": 4,
+              "fret": 4,
+              "technique": ""
+            }
+          }
+        },
+        {
+          "duration": 0.25,
+          "notes": {
+            "4": {
+              "string_idx": 4,
+              "fret": 0,
+              "technique": "x"
+            }
+          }
+        },
+        {
+          "duration": 0.25,
+          "notes": {
+            "0": {
+              "string_idx": 0,
+              "fret": 4,
+              "technique": "\\"
+            }
+          }
+        },
+        {
+          "duration": 0.25,
+          "notes": {
+            "1": {
+              "string_idx": 1,
+              "fret": 5,
+              "technique": ""
+            }
+          }
+        },
+        {
+          "duration": 0.25,
+          "notes": {
+            "2": {
+              "string_idx": 2,
+              "fret": 6,
+              "technique": "h"
+            }
+          }
+        },
+        {
+          "duration": 0.25,
+          "notes": {
+            "2": {
+              "string_idx": 2,
+              "fret": 4,
+              "technique": "p"
+            }
+          }
+        },
+        {
+          "duration": 0.25,
+          "notes": {
+            "3": {
+              "string_idx": 3,
+              "fret": 6,
+              "technique": ""
+            }
+          }
+        },
+        {
+          "duration": 0.25,
+          "notes": {
+            "4": {
+              "string_idx": 4,
+              "fret": 4,
+              "technique": ""
+            }
+          }
+        },
+        {
+          "duration": 0.25,
+          "notes": {
+            "1": {
+              "string_idx": 1,
+              "fret": 3,
+              "technique": ""
+            },
+            "2": {
+              "string_idx": 2,
+              "fret": 2,
+              "technique": ""
+            },
+            "3": {
+              "string_idx": 3,
+              "fret": 4,
+              "technique": ""
+            },
+            "4": {
+              "string_idx": 4,
+              "fret": 2,
+              "technique": ""
+            }
+          }
+        },
+        {
+          "duration": 0.25,
+          "notes": {
+            "4": {
+              "string_idx": 4,
+              "fret": 0,
+              "technique": "x"
+            }
+          }
+        },
+        {
+          "duration": 0.25,
+          "notes": {
+            "1": {
+              "string_idx": 1,
+              "fret": 5,
+              "technique": "h"
+            }
+          }
+        },
+        {
+          "duration": 0.25,
+          "notes": {
+            "1": {
+              "string_idx": 1,
+              "fret": 3,
+              "technique": "p"
+            }
+          }
+        },
+        {
+          "duration": 0.25,
+          "notes": {
+            "1": {
+              "string_idx": 1,
+              "fret": 3,
+              "technique": ""
+            },
+            "2": {
+              "string_idx": 2,
+              "fret": 1,
+              "technique": ""
+            },
+            "3": {
+              "string_idx": 3,
+              "fret": 0,
+              "technique": ""
+            },
+            "4": {
+              "string_idx": 4,
+              "fret": 2,
+              "technique": ""
+            },
+            "5": {
+              "string_idx": 5,
+              "fret": 0,
+              "technique": ""
+            }
+          }
+        },
+        {
+          "duration": 0.25,
+          "notes": {
+            "0": {
+              "string_idx": 0,
+              "fret": 7,
+              "technique": "/"
+            }
+          }
+        },
+        {
+          "duration": 0.25,
+          "notes": {
+            "1": {
+              "string_idx": 1,
+              "fret": 7,
+              "technique": "NH"
+            },
+            "2": {
+              "string_idx": 2,
+              "fret": 7,
+              "technique": "NH"
+            }
+          }
+        },
+        {
+          "duration": 0.25,
+          "notes": {
+            "5": {
+              "string_idx": 5,
+              "fret": 0,
+              "technique": "x"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "beats_per_measure": 16,
+      "beats": [
+        {
+          "duration": 0.25,
+          "notes": {
+            "1": {
+              "string_idx": 1,
+              "fret": 5,
+              "technique": ""
+            },
+            "2": {
+              "string_idx": 2,
+              "fret": 6,
+              "technique": ""
+            },
+            "3": {
+              "string_idx": 3,
+              "fret": 6,
+              "technique": ""
+            },
+            "5": {
+              "string_idx": 5,
+              "fret": 5,
+              "technique": ""
+            }
+          }
+        },
+        {
+          "duration": 0.25,
+          "notes": {
+            "5": {
+              "string_idx": 5,
+              "fret": 0,
+              "technique": "x"
+            }
+          }
+        },
+        {
+          "duration": 0.25,
+          "notes": {
+            "0": {
+              "string_idx": 0,
+              "fret": 7,
+              "technique": "h"
+            }
+          }
+        },
+        {
+          "duration": 0.25,
+          "notes": {
+            "0": {
+              "string_idx": 0,
+              "fret": 4,
+              "technique": "p"
+            }
+          }
+        },
+        {
+          "duration": 0.25,
+          "notes": {
+            "2": {
+              "string_idx": 2,
+              "fret": 6,
+              "technique": ""
+            }
+          }
+        },
+        {
+          "duration": 0.25,
+          "notes": {
+            "0": {
+              "string_idx": 0,
+              "fret": 5,
+              "technique": ""
+            }
+          }
+        },
+        {
+          "duration": 0.25,
+          "notes": {
+            "0": {
+              "string_idx": 0,
+              "fret": 9,
+              "technique": "/"
+            }
+          }
+        },
+        {
+          "duration": 0.25,
+          "notes": {
+            "0": {
+              "string_idx": 0,
+              "fret": 7,
+              "technique": ""
+            }
+          }
+        },
+        {
+          "duration": 0.25,
+          "notes": {
+            "1": {
+              "string_idx": 1,
+              "fret": 4,
+              "technique": ""
+            },
+            "2": {
+              "string_idx": 2,
+              "fret": 5,
+              "technique": ""
+            },
+            "3": {
+              "string_idx": 3,
+              "fret": 4,
+              "technique": ""
+            },
+            "5": {
+              "string_idx": 4,
+              "fret": 4,
+              "technique": ""
+            }
+          }
+        },
+        {
+          "duration": 0.25,
+          "notes": {
+            "5": {
+              "string_idx": 5,
+              "fret": 0,
+              "technique": "x"
+            }
+          }
+        },
+        {
+          "duration": 0.25,
+          "notes": {
+            "3": {
+              "string_idx": 3,
+              "fret": 6,
+              "technique": "h"
+            }
+          }
+        },
+        {
+          "duration": 0.25,
+          "notes": {
+            "2": {
+              "string_idx": 2,
+              "fret": 5,
+              "technique": ""
+            }
+          }
+        },
+        {
+          "duration": 0.25,
+          "notes": {
+            "0": {
+              "string_idx": 0,
+              "fret": 4,
+              "technique": ""
+            }
+          }
+        },
+        {
+          "duration": 0.25,
+          "notes": {
+            "0": {
+              "string_idx": 0,
+              "fret": 2,
+              "technique": "p"
+            }
+          }
+        },
+        {
+          "duration": 0.25,
+          "notes": {
+            "0": {
+              "string_idx": 0,
+              "fret": 12,
+              "technique": "NH"
+            }
+          }
+        },
+        {
+          "duration": 0.25,
+          "notes": {
+            "5": {
+              "string_idx": 5,
+              "fret": 0,
+              "technique": "x"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "beats_per_measure": 16,
+      "beats": [
+        {
+          "duration": 0.25,
+          "notes": {
+            "1": {
+              "string_idx": 1,
+              "fret": 5,
+              "technique": ""
+            },
+            "2": {
+              "string_idx": 2,
+              "fret": 4,
+              "technique": ""
+            },
+            "3": {
+              "string_idx": 3,
+              "fret": 6,
+              "technique": ""
+            },
+            "4": {
+              "string_idx": 4,
+              "fret": 4,
+              "technique": ""
+            }
+          }
+        },
+        {
+          "duration": 0.25,
+          "notes": {}
+        },
+        {
+          "duration": 0.25,
+          "notes": {}
+        },
+        {
+          "duration": 0.25,
+          "notes": {}
+        },
+        {
+          "duration": 0.25,
+          "notes": {
+            "1": {
+              "string_idx": 1,
+              "fret": 3,
+              "technique": ""
+            },
+            "2": {
+              "string_idx": 2,
+              "fret": 2,
+              "technique": ""
+            },
+            "3": {
+              "string_idx": 3,
+              "fret": 4,
+              "technique": ""
+            },
+            "4": {
+              "string_idx": 4,
+              "fret": 2,
+              "technique": ""
+            }
+          }
+        },
+        {
+          "duration": 0.25,
+          "notes": {}
+        },
+        {
+          "duration": 0.25,
+          "notes": {}
+        },
+        {
+          "duration": 0.25,
+          "notes": {}
+        },
+        {
+          "duration": 0.25,
+          "notes": {
+            "0": {
+              "string_idx": 0,
+              "fret": 0,
+              "technique": ""
+            },
+            "1": {
+              "string_idx": 1,
+              "fret": 3,
+              "technique": ""
+            },
+            "2": {
+              "string_idx": 2,
+              "fret": 1,
+              "technique": ""
+            },
+            "3": {
+              "string_idx": 3,
+              "fret": 0,
+              "technique": ""
+            },
+            "4": {
+              "string_idx": 4,
+              "fret": 2,
+              "technique": ""
+            },
+            "5": {
+              "string_idx": 5,
+              "fret": 0,
+              "technique": ""
+            }
+          }
+        },
+        {
+          "duration": 0.25,
+          "notes": {}
+        },
+        {
+          "duration": 0.25,
+          "notes": {}
+        },
+        {
+          "duration": 0.25,
+          "notes": {}
+        },
+        {
+          "duration": 0.25,
+          "notes": {
+            "0": {
+              "string_idx": 0,
+              "fret": 12,
+              "technique": "NH"
+            },
+            "1": {
+              "string_idx": 1,
+              "fret": 12,
+              "technique": "NH"
+            },
+            "2": {
+              "string_idx": 2,
+              "fret": 12,
+              "technique": "NH"
+            }
+          }
+        },
+        {
+          "duration": 0.25,
+          "notes": {}
+        },
+        {
+          "duration": 0.25,
+          "notes": {}
+        },
+        {
+          "duration": 0.25,
+          "notes": {}
+        }
+      ]
+    }
+  ]
+}

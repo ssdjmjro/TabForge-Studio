@@ -1,0 +1,121 @@
+{
+  "title": "Song 1",
+  "artist": "Guitarist",
+  "bpm": 120,
+  "speed_multiplier": 1.0,
+  "tuning_name": "Standard E",
+  "capo": 0,
+  "measures": [
+    {
+      "beats_per_measure": 8,
+      "beats": [
+        {
+          "duration": 0.5,
+          "notes": {}
+        },
+        {
+          "duration": 0.5,
+          "notes": {}
+        },
+        {
+          "duration": 0.5,
+          "notes": {}
+        },
+        {
+          "duration": 0.5,
+          "notes": {}
+        },
+        {
+          "duration": 0.5,
+          "notes": {}
+        },
+        {
+          "duration": 0.5,
+          "notes": {}
+        },
+        {
+          "duration": 0.5,
+          "notes": {}
+        },
+        {
+          "duration": 0.5,
+          "notes": {}
+        }
+      ]
+    },
+    {
+      "beats_per_measure": 8,
+      "beats": [
+        {
+          "duration": 0.5,
+          "notes": {}
+        },
+        {
+          "duration": 0.5,
+          "notes": {}
+        },
+        {
+          "duration": 0.5,
+          "notes": {}
+        },
+        {
+          "duration": 0.5,
+          "notes": {}
+        },
+        {
+          "duration": 0.5,
+          "notes": {}
+        },
+        {
+          "duration": 0.5,
+          "notes": {}
+        },
+        {
+          "duration": 0.5,
+          "notes": {}
+        },
+        {
+          "duration": 0.5,
+          "notes": {}
+        }
+      ]
+    },
+    {
+      "beats_per_measure": 8,
+      "beats": [
+        {
+          "duration": 0.5,
+          "notes": {}
+        },
+        {
+          "duration": 0.5,
+          "notes": {}
+        },
+        {
+          "duration": 0.5,
+          "notes": {}
+        },
+        {
+          "duration": 0.5,
+          "notes": {}
+        },
+        {
+          "duration": 0.5,
+          "notes": {}
+        },
+        {
+          "duration": 0.5,
+          "notes": {}
+        },
+        {
+          "duration": 0.5,
+          "notes": {}
+        },
+        {
+          "duration": 0.5,
+          "notes": {}
+        }
+      ]
+    }
+  ]
+}
