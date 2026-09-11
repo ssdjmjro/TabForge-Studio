@@ -53,11 +53,88 @@ Linux Ver.
    ______
    Step 4: Make the APP icon
 
-    mkdir -p ~/.local/share/icons ~/.local/share/applications && cp stratocaster.svg ~/.local/share/icons/tabforge.svg && echo -e "[Desktop Entry]\nType=Application\nName=TabForge Studio\nExec=python3 $PWD/main.
-    py\nPath=$PWD\nIcon=$HOME/.local/share/icons/tabforge.svg\nTerminal=false\nCategories=AudioVideo;Music;
-    \nStartupWMClass=io.github.tabforge.studio" > ~/.local/share/applications/tabforge.desktop && update-desktop-    
-    database ~/.local/share/applications
+       #!/usr/bin/env bash
+    set -e
 
+    APP_SRC="/home/ssdjmjro/TabForge_Studio_App/TabForge_Studio_App_Source"
+    SVG_SRC="$APP_SRC/stratocaster.svg"
+    ICONS_DIR="$HOME/.local/share/icons"
+    APPS_DIR="$HOME/.local/share/applications"
+    DESKTOP_DIR="$HOME/Desktop"
+
+    echo "1. Creating standard XDG directories..."
+    mkdir -p "$APPS_DIR"
+    mkdir -p "$ICONS_DIR/hicolor/scalable/apps"
+    mkdir -p "$ICONS_DIR/hicolor/"{16x16,24x24,32x32,48x48,64x64,128x128,256x256,
+    512x512}/apps
+    mkdir -p "$DESKTOP_DIR"
+
+    echo "2. Installing scalable SVG icons..."
+    cp "$SVG_SRC" "$APP_SRC/io.github.tabforge.studio.svg"
+    cp "$SVG_SRC" "$APP_SRC/tabforge.svg"
+    cp "$SVG_SRC" "$ICONS_DIR/io.github.tabforge.studio.svg"
+    cp "$SVG_SRC" "$ICONS_DIR/tabforge.svg"
+    cp "$SVG_SRC" "$ICONS_DIR/hicolor/scalable/apps/io.github.tabforge.studio.svg"
+    cp "$SVG_SRC" "$ICONS_DIR/hicolor/scalable/apps/tabforge.svg"
+
+    echo "3. Generating multi-resolution PNG icons (16x16 to 512x512)..."
+    python3 -c "
+    import os, gi
+    gi.require_version('GdkPixbuf', '2.0')
+    from gi.repository import GdkPixbuf
+
+    src = '$SVG_SRC'
+    pb = GdkPixbuf.Pixbuf.new_from_file(src)
+    base = os.path.expanduser('~/.local/share/icons/hicolor')
+
+    for size in [16, 24, 32, 48, 64, 128, 256, 512]:
+        d = f'{base}/{size}x{size}/apps'
+        scaled = pb.scale_simple(size, size, GdkPixbuf.InterpType.BILINEAR)
+        if scaled:
+            scaled.savev(f'{d}/io.github.tabforge.studio.png', 'png', [], [])
+            scaled.savev(f'{d}/tabforge.png', 'png', [], [])
+    "
+
+    echo "4. Creating desktop entry..."
+    cat << 'EOF' > "$APPS_DIR/io.github.tabforge.studio.desktop"
+    [Desktop Entry]
+    Version=1.5
+    Type=Application
+    Name=TabForge Studio
+    GenericName=Guitar Tablature Studio
+    Comment=Songsterr-Style 22-Fret Guitar Tablature & Audio Studio
+    Exec=/usr/bin/python3
+    /home/ssdjmjro/TabForge_Studio_App/TabForge_Studio_App_Source/main.py
+    Icon=io.github.tabforge.studio
+    Path=/home/ssdjmjro/TabForge_Studio_App/TabForge_Studio_App_Source
+    Terminal=false
+    StartupNotify=true
+    StartupWMClass=io.github.tabforge.studio
+    Categories=AudioVideo;Audio;Music;Sequencer;
+    Keywords=Guitar;Tab;Tablature;Music;Fender;Stratocaster;Songsterr;Studio;Audio;
+    EOF
+
+    chmod +x "$APPS_DIR/io.github.tabforge.studio.desktop"
+
+    # Copy alias and desktop shortcut
+    cp "$APPS_DIR/io.github.tabforge.studio.desktop" "$APPS_DIR/tabforge.desktop"
+    chmod +x "$APPS_DIR/tabforge.desktop"
+
+    cp "$APPS_DIR/io.github.tabforge.studio.desktop" "$DESKTOP_DIR/TabForge Studio.
+    desktop"
+    chmod +x "$DESKTOP_DIR/TabForge Studio.desktop"
+    gio set -t string "$DESKTOP_DIR/TabForge Studio.desktop" metadata::trusted true
+    2>/dev/null || true
+
+    echo "5. Refreshing system icon caches and desktop databases..."
+    gtk-update-icon-cache -f -t "$ICONS_DIR/hicolor" 2>/dev/null || true
+    update-desktop-database "$APPS_DIR" 2>/dev/null || true
+    kbuildsycoca6 2>/dev/null || kbuildsycoca5 2>/dev/null || true
+
+    echo "6. Validating desktop file..."
+    desktop-file-validate "$APPS_DIR/io.github.tabforge.studio.desktop"
+
+    echo "Done!"
 MacOS Ver.
   1. Extract TabForge_Studio_macOS.zip
   2. Double-click TabForge_Studio_macOS.command in Finder (or run ./TabForge_Studio_macOS.command in Terminal).
