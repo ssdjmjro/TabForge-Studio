@@ -1,24 +1,42 @@
-# TabForge-Studio
-Guitar tab writer
+# 🎸 TabForge Studio
 
-Windows Ver.
-  1. Download / Copy TabForge_Studio_Windows_Portable.zip to your Windows   
-  computer.
-  2. Right-click the .zip file and select Extract All...
-  3. Inside the extracted folder, double-click Start_TabForge_Studio.bat (or
-  double-click index.html).
-  
-  That's it! It will instantly launch TabForge Studio in Microsoft Edge or  
-  Chrome with zero setup or installation required.
+An open-source, Songsterr-style **22-Fret Guitar Tablature & Audio Studio** for Linux built with Python, GTK4, Libadwaita, and Cairo.
 
-Linux Ver.
-  
-    git clone https://github.com/ssdjmjro/TabForge-Studio.git ~/TabForge_Studio_App
-    cd ~/TabForge_Studio_App
-    ./install.sh
+## ✨ Features
 
-MacOS Ver.
-  1. Extract TabForge_Studio_macOS.zip
-  2. Double-click TabForge_Studio_macOS.command in Finder (or run ./TabForge_Studio_macOS.command in Terminal).
-  3. (Optional) Run ./setup_mac.sh to automatically install GTK4, Libadwaita & GStreamer via Homebrew.         
-  4. (Optional) Run ./build_mac_app.sh to compile a native TabForgeStudio.app bundle.
+- **Interactive 22-Fret Stratocaster Neck & Visual Picker**: Click frets directly on the visual fretboard or enter fret numbers on the 6-string tablature canvas.
+- **Guitar Techniques & Articulations**: Supports hammer-ons (`h`), pull-offs (`p`), slides (`/`, `\`), bends (`b`), vibrato (`~`), palm muting (`P.M.`), harmonics, dead notes (`X`), and ghost notes.
+- **Real-Time Playback & Synth Engine**: Built-in guitar synthesizer with adjustable BPM, time signatures, loop regions, and metronome.
+- **Built-in Audio Recorder**: Record live guitar takes to `~/guitar_recordings/`.
+- **Vector PDF Sheet Music Export**: Export crisp, printable vector PDF guitar tabs to `~/My_Guitar_PDFs/`.
+- **Native Desktop Integration**: Installs a desktop shortcut and system application menu icon with one command.
+
+---
+
+## 🚀 Quick Install (`git clone` + Desktop Icon)
+
+Clone the repository and run `./install.sh` to install dependencies, create your workspace folders, and add the **TabForge Studio** icon to your Desktop and Application Menu:
+
+```bash
+git clone https://github.com/ssdjmjro/TabForge-Studio.git ~/TabForge_Studio_App
+cd ~/TabForge_Studio_App
+bash install.sh
+```
+
+### Launching
+- **From Desktop / App Menu**: Click the **TabForge Studio** icon on your Desktop or in your system application launcher.
+- **From Terminal**:
+  ```bash
+  ~/TabForge_Studio_App/TabForge_Studio_App_Source/launch.sh
+  ```
+
+---
+
+## 🛠️ Requirements
+
+- Linux with **GTK 4** and **Libadwaita**
+- Python 3 (`python3-gi`, `python3-gi-cairo`, `gir1.2-gtk-4.0`, `gir1.2-adw-1`) — automatically checked and installed by `./install.sh` on Debian/Ubuntu/Parrot systems.
+
+## 📄 License
+
+Released under the [MIT License](LICENSE).

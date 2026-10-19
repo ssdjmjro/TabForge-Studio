@@ -1,0 +1,254 @@
+/* ===================================================================
+   TabForge Studio - Modern Dark Studio Theme
+   Palette: Midnight Obsidian (#090B10), Slate (#121520),
+   Studio Cyan (#00E5FF), Emerald Green (#2ECC71), Crimson (#FF1744)
+   =================================================================== */
+
+window {
+    background-color: #090b10;
+    color: #f1f5f9;
+    font-family: "Inter", "Cantarell", "Ubuntu", "Segoe UI", sans-serif;
+}
+
+/* HeaderBar */
+headerbar {
+    background: linear-gradient(180deg, #181c28 0%, #0e111a 100%);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
+    min-height: 54px;
+    padding: 0 10px;
+}
+
+headerbar .title {
+    font-weight: 800;
+    color: #f8fafc;
+    font-size: 15px;
+    letter-spacing: 0.4px;
+}
+
+headerbar .subtitle {
+    color: #94a3b8;
+    font-size: 11px;
+}
+
+/* Base Buttons & Pills */
+button {
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    transition: all 180ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+button.pill {
+    border-radius: 20px;
+    padding: 5px 15px;
+    font-size: 12px;
+    font-weight: 700;
+    background-color: #161a26;
+    color: #cbd5e1;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+button.pill:hover {
+    background-color: #202638;
+    color: #ffffff;
+    border-color: rgba(0, 229, 255, 0.5);
+    box-shadow: 0 0 12px rgba(0, 229, 255, 0.25);
+    transform: translateY(-1px);
+}
+
+button.pill:active {
+    background-color: #00e5ff;
+    color: #090b10;
+    transform: translateY(0);
+}
+
+/* Fixed-width Transport Button prevents layout jumps */
+button.transport-btn {
+    min-width: 104px;
+    text-align: center;
+}
+
+/* Play Action Button - Glowing Cyber Emerald Green */
+button.suggested-action {
+    background: linear-gradient(135deg, #2ecc71 0%, #00b0ff 100%);
+    color: #05080e;
+    font-weight: 800;
+    border-radius: 20px;
+    border: none;
+    padding: 6px 18px;
+    font-size: 12.5px;
+    box-shadow: 0 3px 14px rgba(46, 204, 113, 0.4);
+}
+
+button.suggested-action:hover {
+    background: linear-gradient(135deg, #38d97d 0%, #33c1ff 100%);
+    box-shadow: 0 4px 20px rgba(46, 204, 113, 0.65);
+    color: #000000;
+    transform: translateY(-1px);
+}
+
+/* Stop / Record Action Buttons - Crimson Red Glow */
+button.destructive-action {
+    background: linear-gradient(135deg, #ff1744 0%, #ff5252 100%);
+    color: #ffffff;
+    font-weight: 800;
+    border-radius: 20px;
+    border: none;
+    padding: 6px 18px;
+    font-size: 12.5px;
+    box-shadow: 0 3px 14px rgba(255, 23, 68, 0.45);
+}
+
+button.destructive-action:hover {
+    background: linear-gradient(135deg, #ff4569 0%, #ff7979 100%);
+    box-shadow: 0 4px 20px rgba(255, 23, 68, 0.7);
+    transform: translateY(-1px);
+}
+
+/* Input Fields & Spin Buttons */
+entry, spinbutton {
+    background-color: #121520;
+    color: #f8fafc;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: 10px;
+    padding: 4px 10px;
+    font-weight: 700;
+    font-size: 12.5px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+entry:focus, spinbutton:focus {
+    border-color: #00e5ff;
+    box-shadow: 0 0 12px rgba(0, 229, 255, 0.45), inset 0 2px 4px rgba(0, 0, 0, 0.4);
+    background-color: #181c2b;
+}
+
+dropdown {
+    background-color: #121520;
+    color: #f8fafc;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: 10px;
+    padding: 4px 10px;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+dropdown:hover {
+    border-color: rgba(0, 229, 255, 0.5);
+    background-color: #181c2b;
+}
+
+/* Chrome Multi-Song TabBar */
+tabbar {
+    background-color: #08090d;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 5px 8px 0 8px;
+}
+
+tabbar tab {
+    background-color: #121520;
+    color: #94a3b8;
+    border-radius: 12px 12px 0 0;
+    margin: 0 3px;
+    padding: 8px 20px;
+    font-weight: 700;
+    font-size: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-bottom: none;
+    transition: all 180ms ease;
+}
+
+tabbar tab:hover {
+    background-color: #1a1e2d;
+    color: #f1f5f9;
+}
+
+tabbar tab:checked {
+    background-color: #1c2132;
+    color: #00e5ff;
+    border-bottom: 2px solid #00e5ff;
+    box-shadow: 0 -3px 12px rgba(0, 229, 255, 0.2);
+}
+
+/* Frames & Cards */
+frame {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 14px;
+    background-color: #0f121a;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Popovers & Floating Menus */
+popover contents {
+    background-color: #141824;
+    border: 1px solid rgba(0, 229, 255, 0.3);
+    border-radius: 14px;
+    box-shadow: 0 10px 32px rgba(0, 0, 0, 0.7);
+    padding: 12px;
+    color: #f8fafc;
+}
+
+popover button.flat {
+    border-radius: 8px;
+    padding: 6px 12px;
+    font-weight: 600;
+    font-size: 12px;
+    color: #cbd5e1;
+}
+
+popover button.flat:hover {
+    background-color: #22273a;
+    color: #00e5ff;
+}
+
+/* VU Meter Progress Bar */
+progressbar trough {
+    background-color: #121520;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 6px;
+    min-height: 10px;
+}
+
+progressbar progress {
+    background: linear-gradient(90deg, #2ecc71 0%, #ffb300 70%, #ff1744 100%);
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(46, 204, 113, 0.45);
+}
+
+/* Custom Utility Labels & Badges */
+label.dim-label {
+    color: #94a3b8;
+    font-size: 11.5px;
+    font-weight: 600;
+}
+
+label.caption-heading {
+    color: #e2e8f0;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+label.playback-badge {
+    background: linear-gradient(135deg, rgba(46, 204, 113, 0.18) 0%, rgba(0, 229, 255, 0.18) 100%);
+    color: #2ecc71;
+    border: 1px solid rgba(46, 204, 113, 0.45);
+    border-radius: 16px;
+    padding: 4px 14px;
+    font-weight: 800;
+    font-size: 11.5px;
+    letter-spacing: 0.4px;
+    box-shadow: 0 0 12px rgba(46, 204, 113, 0.2);
+}
+
+label.heading {
+    color: #f8fafc;
+    font-size: 13.5px;
+    font-weight: 800;
+}
+
+separator {
+    background-color: rgba(255, 255, 255, 0.08);
+    min-width: 1px;
+    min-height: 1px;
+}

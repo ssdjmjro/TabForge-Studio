@@ -1,0 +1,14 @@
+[Desktop Entry]
+Version=1.5
+Type=Application
+Name=TabForge Studio
+GenericName=Guitar Tablature Studio
+Comment=Songsterr-Style 22-Fret Guitar Tablature & Audio Studio
+Exec=/usr/bin/python3 /home/ssdjmjro/TabForge_Studio_App/TabForge_Studio_App_Source/main.py
+Icon=io.github.tabforge.studio
+Path=/home/ssdjmjro/TabForge_Studio_App/TabForge_Studio_App_Source
+Terminal=false
+StartupNotify=true
+StartupWMClass=io.github.tabforge.studio
+Categories=AudioVideo;Audio;Music;Sequencer;
+Keywords=Guitar;Tab;Tablature;Music;Fender;Stratocaster;Songsterr;Studio;Audio;
