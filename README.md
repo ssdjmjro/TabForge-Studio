@@ -1,8 +1,8 @@
-# 🎸 TabForge Studio
+#  TabForge Studio
 
 An open-source, Songsterr-style **22-Fret Guitar Tablature & Audio Studio** for Linux built with Python, GTK4, Libadwaita, and Cairo.
 
-## ✨ Features
+##  Features
 
 - **Interactive 22-Fret Stratocaster Neck & Visual Picker**: Click frets directly on the visual fretboard or enter fret numbers on the 6-string tablature canvas.
 - **Guitar Techniques & Articulations**: Supports hammer-ons (`h`), pull-offs (`p`), slides (`/`, `\`), bends (`b`), vibrato (`~`), palm muting (`P.M.`), harmonics, dead notes (`X`), and ghost notes.
@@ -13,7 +13,7 @@ An open-source, Songsterr-style **22-Fret Guitar Tablature & Audio Studio** for 
 
 ---
 
-## 🚀 Quick Install (`git clone` + Desktop Icon)
+##  Quick Install (`git clone` + Desktop Icon)
 
 Clone the repository and run `./install.sh` to install dependencies, create your workspace folders, and add the **TabForge Studio** icon to your Desktop and Application Menu:
 
@@ -32,11 +32,11 @@ bash install.sh
 
 ---
 
-## 🛠️ Requirements
+##  Requirements
 
 - Linux with **GTK 4** and **Libadwaita**
 - Python 3 (`python3-gi`, `python3-gi-cairo`, `gir1.2-gtk-4.0`, `gir1.2-adw-1`) — automatically checked and installed by `./install.sh` on Debian/Ubuntu/Parrot systems.
 
-## 📄 License
+##  License
 
 Released under the [MIT License](LICENSE).
