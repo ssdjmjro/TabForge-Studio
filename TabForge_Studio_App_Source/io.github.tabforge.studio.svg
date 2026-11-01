@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <!-- Strat Sunburst Body Gradient -->
+    <radialGradient id="sunburst" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#ffb74d"/>
+      <stop offset="45%" stop-color="#e65100"/>
+      <stop offset="85%" stop-color="#3e2723"/>
+      <stop offset="100%" stop-color="#1a0c00"/>
+    </radialGradient>
+    
+    <!-- Chrome Hardware Gradient -->
+    <linearGradient id="chrome" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="50%" stop-color="#b0bec5"/>
+      <stop offset="100%" stop-color="#37474f"/>
+    </linearGradient>
+
+    <!-- Pickguard Gradient -->
+    <linearGradient id="pickguard" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f5f5f5"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Dark Studio Outer Circular Container -->
+  <circle cx="256" cy="256" r="240" fill="#12141c" stroke="#ffb74d" stroke-width="8"/>
+
+  <!-- Fender Stratocaster Body (Double Cutaway) -->
+  <g transform="translate(140, 60) rotate(22, 120, 200)">
+    <!-- Body Shape -->
+    <path d="M 80,40 C 60,10 20,40 30,80 C 40,110 50,150 40,200 C 30,260 50,340 120,350 C 190,360 210,290 200,220 C 190,160 195,110 210,80 C 220,50 180,20 160,50 C 140,80 130,90 120,90 C 110,90 100,70 80,40 Z" fill="url(#sunburst)" stroke="#110700" stroke-width="4"/>
+
+    <!-- Strat Pickguard (Classic Shape) -->
+    <path d="M 75,100 C 65,130 60,180 65,220 C 70,270 90,310 130,315 C 165,320 175,280 170,220 C 165,170 165,130 155,100 Z" fill="url(#pickguard)" stroke="#cfd8dc" stroke-width="2"/>
+
+    <!-- 3 Single Coil Pickups -->
+    <rect x="85" y="130" width="70" height="14" rx="7" fill="#ffffff" stroke="#90a4ae" stroke-width="2"/>
+    <rect x="85" y="165" width="70" height="14" rx="7" fill="#ffffff" stroke="#90a4ae" stroke-width="2"/>
+    <rect x="85" y="200" width="70" height="14" rx="7" fill="#ffffff" stroke="#90a4ae" stroke-width="2"/>
+
+    <!-- Pickup Pole Pieces -->
+    <circle cx="95" cy="137" r="2.5" fill="#37474f"/>
+    <circle cx="107" cy="137" r="2.5" fill="#37474f"/>
+    <circle cx="119" cy="137" r="2.5" fill="#37474f"/>
+    <circle cx="131" cy="137" r="2.5" fill="#37474f"/>
+    <circle cx="143" cy="137" r="2.5" fill="#37474f"/>
+    <circle cx="155" cy="137" r="2.5" fill="#37474f"/>
+
+    <circle cx="95" cy="172" r="2.5" fill="#37474f"/>
+    <circle cx="107" cy="172" r="2.5" fill="#37474f"/>
+    <circle cx="119" cy="172" r="2.5" fill="#37474f"/>
+    <circle cx="131" cy="172" r="2.5" fill="#37474f"/>
+    <circle cx="143" cy="172" r="2.5" fill="#37474f"/>
+    <circle cx="155" cy="172" r="2.5" fill="#37474f"/>
+
+    <circle cx="95" cy="207" r="2.5" fill="#37474f"/>
+    <circle cx="107" cy="207" r="2.5" fill="#37474f"/>
+    <circle cx="119" cy="207" r="2.5" fill="#37474f"/>
+    <circle cx="131" cy="207" r="2.5" fill="#37474f"/>
+    <circle cx="143" cy="207" r="2.5" fill="#37474f"/>
+    <circle cx="155" cy="207" r="2.5" fill="#37474f"/>
+
+    <!-- Strat Synchronized Tremolo Bridge -->
+    <rect x="90" y="245" width="60" height="40" rx="4" fill="url(#chrome)" stroke="#455a64" stroke-width="2"/>
+    <!-- Tremolo Arm -->
+    <path d="M 145,260 L 195,270 L 205,330" fill="none" stroke="url(#chrome)" stroke-width="5" stroke-linecap="round"/>
+
+    <!-- Strat Volume & Tone Knobs -->
+    <circle cx="145" cy="225" r="10" fill="#ffffff" stroke="#b0bec5" stroke-width="2"/>
+    <circle cx="135" cy="295" r="10" fill="#ffffff" stroke="#b0bec5" stroke-width="2"/>
+    <circle cx="160" cy="295" r="10" fill="#ffffff" stroke="#b0bec5" stroke-width="2"/>
+
+    <!-- Neck & 22-Fret Maple Fretboard -->
+    <rect x="105" y="-120" width="30" height="210" fill="#d7ccc8" stroke="#8d6e63" stroke-width="2"/>
+    <!-- Frets -->
+    <line x1="105" y1="-100" x2="135" y2="-100" stroke="#78909c" stroke-width="2"/>
+    <line x1="105" y1="-80" x2="135" y2="-80" stroke="#78909c" stroke-width="2"/>
+    <line x1="105" y1="-60" x2="135" y2="-60" stroke="#78909c" stroke-width="2"/>
+    <line x1="105" y1="-40" x2="135" y2="-40" stroke="#78909c" stroke-width="2"/>
+    <line x1="105" y1="-20" x2="135" y2="-20" stroke="#78909c" stroke-width="2"/>
+    <line x1="105" y1="0" x2="135" y2="0" stroke="#78909c" stroke-width="2"/>
+    <line x1="105" y1="20" x2="135" y2="20" stroke="#78909c" stroke-width="2"/>
+    <line x1="105" y1="40" x2="135" y2="40" stroke="#78909c" stroke-width="2"/>
+    <line x1="105" y1="60" x2="135" y2="60" stroke="#78909c" stroke-width="2"/>
+
+    <!-- Strat Reverse Headstock -->
+    <path d="M 105,-120 C 95,-130 90,-160 110,-175 C 130,-190 145,-170 135,-120 Z" fill="#d7ccc8" stroke="#8d6e63" stroke-width="2"/>
+    <!-- Tuning Pegs (6 In-Line) -->
+    <circle cx="98" cy="-135" r="4" fill="url(#chrome)"/>
+    <circle cx="98" cy="-145" r="4" fill="url(#chrome)"/>
+    <circle cx="98" cy="-155" r="4" fill="url(#chrome)"/>
+    <circle cx="102" cy="-165" r="4" fill="url(#chrome)"/>
+    <circle cx="110" cy="-172" r="4" fill="url(#chrome)"/>
+    <circle cx="120" cy="-175" r="4" fill="url(#chrome)"/>
+
+    <!-- 6 Strings -->
+    <line x1="108" y1="-170" x2="108" y2="245" stroke="#ffffff" stroke-width="1.2" opacity="0.9"/>
+    <line x1="113" y1="-170" x2="113" y2="245" stroke="#ffffff" stroke-width="1.2" opacity="0.9"/>
+    <line x1="118" y1="-170" x2="118" y2="245" stroke="#ffffff" stroke-width="1.2" opacity="0.9"/>
+    <line x1="123" y1="-170" x2="123" y2="245" stroke="#ffffff" stroke-width="1.2" opacity="0.9"/>
+    <line x1="128" y1="-170" x2="128" y2="245" stroke="#ffffff" stroke-width="1.2" opacity="0.9"/>
+    <line x1="132" y1="-170" x2="132" y2="245" stroke="#ffffff" stroke-width="1.2" opacity="0.9"/>
+  </g>
+</svg>

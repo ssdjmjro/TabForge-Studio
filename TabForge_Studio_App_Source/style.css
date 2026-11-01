@@ -1,0 +1,147 @@
+/* TabForge Studio. Colours build on libadwaita's dark theme, so widgets stay
+   consistent and only the palette and toolbar spacing are customised here. */
+
+@define-color accent_bg_color #2a9d8f;
+@define-color accent_fg_color #ffffff;
+@define-color accent_color #5fd3c4;
+@define-color window_bg_color #15171d;
+@define-color window_fg_color #e6e8ee;
+@define-color headerbar_bg_color #1c1f27;
+@define-color popover_bg_color #22252e;
+@define-color dialog_bg_color #1c1f27;
+@define-color destructive_bg_color #c9374a;
+@define-color destructive_color #ff7b8a;
+
+headerbar {
+    min-height: 44px;
+}
+
+.title-entry {
+    min-height: 28px;
+    font-weight: 600;
+}
+
+.tool-row {
+    padding: 5px 10px;
+    background-color: @headerbar_bg_color;
+    border-bottom: 1px solid alpha(white, 0.06);
+}
+
+.tool-row button,
+.tool-row spinbutton,
+.tool-row dropdown > button {
+    min-height: 28px;
+    font-size: 12.5px;
+}
+
+.tool-row button {
+    padding: 0 9px;
+}
+
+.tool-row button label {
+    font-weight: 600;
+}
+
+.tool-row spinbutton button {
+    padding: 0 4px;
+    min-width: 24px;
+}
+
+.tool-caption {
+    color: alpha(@window_fg_color, 0.55);
+    font-size: 11.5px;
+    font-weight: 600;
+}
+
+/* Keeps the row steady when Play changes to Stop. */
+button.transport-btn {
+    min-width: 84px;
+}
+
+button.record-btn image {
+    color: @destructive_color;
+}
+
+/* A control that describes the slot or note under the cursor. */
+button.current,
+menubutton.current > button {
+    background-color: alpha(@accent_bg_color, 0.45);
+    color: white;
+}
+
+button.current:hover,
+menubutton.current > button:hover {
+    background-color: alpha(@accent_bg_color, 0.6);
+}
+
+.level-meter,
+.level-meter trough,
+.level-meter progress {
+    min-width: 44px;
+}
+
+.page-turner {
+    padding: 4px 6px;
+    border-radius: 10px;
+    background-color: #2a2e39;
+    border: 1px solid alpha(white, 0.12);
+    box-shadow: 0 2px 8px alpha(black, 0.45);
+}
+
+.page-turner button {
+    min-height: 28px;
+    font-weight: 600;
+}
+
+.page-number {
+    min-width: 96px;
+    font-weight: 700;
+}
+
+.neck-panel {
+    border-top: 1px solid alpha(white, 0.06);
+}
+
+.status-bar {
+    min-height: 28px;
+    padding: 0 10px;
+    background-color: @headerbar_bg_color;
+    border-top: 1px solid alpha(white, 0.06);
+}
+
+.status-bar button {
+    min-height: 24px;
+    min-width: 24px;
+    padding: 0;
+}
+
+.status-text {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.status-dim {
+    color: alpha(@window_fg_color, 0.55);
+    font-size: 11.5px;
+}
+
+label.playback-badge {
+    color: @accent_color;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.shortcut-title {
+    color: @accent_color;
+    font-weight: 700;
+}
+
+.shortcut-key {
+    font-family: monospace;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.shortcut-text {
+    font-size: 12.5px;
+}
